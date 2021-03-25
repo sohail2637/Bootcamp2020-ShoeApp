@@ -1,38 +1,86 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: #54d9de;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  /* font-family: 'revert'; */
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navecontainer {
+  width: 100%;
+  margin: auto;
+  /* background-color: #e2f3f5; */
   display: flex;
-  flex-direction: column;
+}
+
+.logocontainer {
+  width: 30%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.logo{
+  width: 200px;
+  height: 100px;
+  margin: 15px;
+  /* background-color: #22d1ee; */
+}
+.naveInnerContainer {
+  margin: auto;
+  width: 50%;
+}
+.naveInnerContainer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 50px;
+}
+.naveInnerContainer > ul > li {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+}
+.naveInnerContainer > ul > li:hover {
+  background-color: #dfe9eb;
+}
+.navlink{
+  margin: auto 10px;
+}
+.navlink:hover{
+  color:#0dba3e;
+}
+.cardcontainer {
+  width: 95%;
+  margin: 3% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-basis: 30%;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 400px;
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  top: -5;
+  right: -5px;
+  /* cursor: pointer; */
+}
+h3{
+  margin: 5px auto;
+}
+h4{
+  margin-top: 15px;
+}
+p{
+  margin-top: 15px;
 }
